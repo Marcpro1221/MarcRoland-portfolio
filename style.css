@@ -1,0 +1,249 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.font-paragraph{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 25px;  
+}
+#Portfolio-Name{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 40px;
+}
+.inner-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #176B87;
+    padding: 5px;
+}
+.child-container{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.inner-container > .child-container:nth-child(1){
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.inner-container > .child-container:nth-child(2){
+    justify-content: center;
+    width: 50%;
+}
+
+/*
+Hero Section
+*/
+
+.hero-container{
+    padding: 30px;
+    background-color: #EEF5FF;
+}
+.hero-inner-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+}
+#hero-name{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 5rem;
+}
+#hero-role{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 3rem;
+}
+
+.hero-inner-container > div:nth-child(1){
+    text-align: center;
+}
+
+/*
+Featured Section
+
+*/
+
+.featured-font{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2rem;
+    text-align:center;
+}
+.outer-featured{
+    padding: 5%;
+    background-color: #86B6F6;
+}
+.inner-featured{
+    display:flex;
+    flex-direction: column;
+}
+.inner-featured > div:nth-child(1) > h1{
+    font-size: 4rem;
+}
+.inner-featured > div:nth-child(1){
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.inner-featured > div:nth-child(2){
+    padding-left: 100px;
+    padding-right:100px;
+}
+.grid-skillset{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+.grid-skillset > div{
+    border:5px solid black;
+    background-color: #176B87;
+}
+.grid-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   padding: 0;
+
+}
+.grid-container-dsa{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0;
+ 
+ }
+.grid-container li{
+    padding: 5px;
+    text-align: center;
+    
+}
+.grid-container > div{
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+}
+
+
+
+
+
+
+@media(max-width:1000px){
+    #hero-name{
+        font-size: 4rem;
+    }
+    #hero-role{
+        font-size: 2rem;
+    }
+    .hero-inner-container > div:nth-child(2) > img{
+        width:350px;
+    }
+    .inner-container > .child-container:nth-child(1){
+        width: 50%;
+    }
+    .inner-featured > div:nth-child(2){
+        padding-left: 30px;
+        padding-right:30px;
+    }
+    .hero-inner-container{
+        height: 40vh;
+    }
+    .inner-featured > div:nth-child(1) > h1{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:800px){
+    #hero-name{
+        font-size: 3rem;
+    }
+    #hero-role{
+        font-size: 1.5rem;
+    }
+    .hero-inner-container > div:nth-child(2) > img{
+        width:250px;
+    }
+    .inner-container > .child-container:nth-child(1){
+        width: 50%;
+    }
+    .inner-featured > div:nth-child(2){
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .grid-skillset{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+    }
+    .inner-featured > div:nth-child(1) > h1{
+        font-size: 2rem;
+    }
+    .featured-font{
+        font-size: 1rem;
+    }
+}
+@media(max-width:590px){
+    #hero-name{
+        font-size: 2.5rem;
+    }
+    #hero-role{
+        font-size: 1rem;
+    }
+    .grid-skillset{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        
+    }
+    .featured-font{
+     font-size: 2.5rem;
+    }
+    .font-paragraph{
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 20px;  
+    }
+    #Portfolio-Name{
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 30px;
+    }
+    .hero-inner-container{
+        flex-direction: column;
+        height: 40vh;
+    }
+
+}
+
+@media(max-width:480px){
+    .font-paragraph{
+        font-size: 15px;  
+    }
+    #Portfolio-Name{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:400px){
+    .hero-inner-container > div:nth-child(2) > img{
+        width:150px;
+    }
+    .hero-inner-container{
+        height: 30vh;
+    }
+    #hero-name{
+        font-size: 1.5rem;
+    }
+    #hero-role{
+        font-size: 0.5rem;
+    }
+    .hero-container{
+        padding: 5px;
+    }
+}
+

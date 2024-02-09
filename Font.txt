@@ -1,0 +1,63 @@
+
+Normal Font
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+
+CSS Rule:
+font-family: 'Noto Sans', sans-serif;
+
+
+------------------------------------------------------------------------------------------
+
+
+
+Highlight Font
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+Css Rule:
+font-family: 'Share Tech Mono', monospace;
+
+
+------------------------------------------------------------------------------------------
+
+
+Bold/Highlight
+Ubunto
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+CSS Rule:
+font-family: 'Ubuntu', sans-serif;
+
+
+
+
+------------------------------------------------------------------------------------------
+
+
+Paragraph font
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+
+CSs Rule:
+font-family: 'Barlow', sans-serif;
+
+
+
+
+
+
+
+
+
+
+
