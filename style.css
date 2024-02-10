@@ -1,3 +1,5 @@
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -8,7 +10,7 @@ body{
     font-family: 'Noto Sans', sans-serif;
     font-size: 25px;  
 }
-#Portfolio-Name{
+#PortfolioName{
     font-family: 'Share Tech Mono', monospace;
     font-size: 40px;
 }
@@ -47,13 +49,13 @@ Hero Section
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    height: 70vh;
+    height: 60vh;
 }
-#hero-name{
+#heroName{
     font-family: 'Share Tech Mono', monospace;
     font-size: 5rem;
 }
-#hero-role{
+#heroRole{
     font-family: 'Share Tech Mono', monospace;
     font-size: 3rem;
 }
@@ -121,6 +123,10 @@ Featured Section
     text-align: center;
     
 }
+.grid-container-dsa li{
+    text-align: center; 
+    padding: 20px;
+}
 .grid-container > div{
     display: flex;
     flex-direction: column;
@@ -131,14 +137,22 @@ ul{
 
 
 
-
+@media(max-width:1200px){
+    .hero-inner-container{
+        height: 40vh;
+    }
+    .inner-featured > div:nth-child(2){
+        padding-left: 50px;
+        padding-right:50px;
+    }
+}
 
 
 @media(max-width:1000px){
-    #hero-name{
+    #heroName{
         font-size: 4rem;
     }
-    #hero-role{
+    #heroRole{
         font-size: 2rem;
     }
     .hero-inner-container > div:nth-child(2) > img{
@@ -157,13 +171,16 @@ ul{
     .inner-featured > div:nth-child(1) > h1{
         font-size: 3rem;
     }
+    .outer-featured{
+        padding: 10px;
+    }
 }
 
-@media(max-width:800px){
-    #hero-name{
+@media(max-width:880px){
+    #heroName{
         font-size: 3rem;
     }
-    #hero-role{
+    #heroRole{
         font-size: 1.5rem;
     }
     .hero-inner-container > div:nth-child(2) > img{
@@ -190,10 +207,10 @@ ul{
     }
 }
 @media(max-width:590px){
-    #hero-name{
+    #heroName{
         font-size: 2.5rem;
     }
-    #hero-role{
+    #heroRole{
         font-size: 1rem;
     }
     .grid-skillset{
@@ -209,7 +226,7 @@ ul{
         font-family: 'Noto Sans', sans-serif;
         font-size: 20px;  
     }
-    #Portfolio-Name{
+    #PortfolioName{
         font-family: 'Share Tech Mono', monospace;
         font-size: 30px;
     }
@@ -224,26 +241,41 @@ ul{
     .font-paragraph{
         font-size: 15px;  
     }
-    #Portfolio-Name{
+    #PortfolioName{
         font-size: 20px;
+    }
+     .hero-inner-container{
+        height: 40vh;
+    }
+    .hero-inner-container > div:nth-child(2) > img{
+        width:200px;
     }
 }
 
 @media(max-width:400px){
     .hero-inner-container > div:nth-child(2) > img{
-        width:150px;
+        width:170px;
     }
     .hero-inner-container{
         height: 30vh;
     }
-    #hero-name{
+    #heroName{
         font-size: 1.5rem;
     }
-    #hero-role{
-        font-size: 0.5rem;
+    #heroRole{
+        font-size: 0.9rem;
     }
     .hero-container{
         padding: 5px;
+    }
+    #PortfolioName{
+        font-size: 15px;
+    }
+    .featured-font{
+        font-size: 1.5rem;
+    }
+    .icon-img{
+        width: 50px;
     }
 }
 
